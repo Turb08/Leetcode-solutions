@@ -5,7 +5,7 @@ class Solution {
                 digits[i]++;
                 return digits;
             }
-            digits[i] = 0;
+            else digits[i] = 0;
         }
 
         int[] result = new int[digits.length + 1];
@@ -15,7 +15,7 @@ class Solution {
 }
 
 //loop from right to left
-//if the digit is less than 9, incremement by 1, if not return the array
+//if the digit is less than 9, increment by 1, if not return the array
 //if the digit is 9, set it to zero and increment the next left digit by 1
-//repeat until there no leading index is 0
-//return the new appended array
+//if all digits are 9, create a new array and set the first index as 1
+//return the new array
